@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index</title>
+    <h2 align='center'>Welcome</h2>
+    <style type="text/css">
+        body{
+            background-image: url('back.png');
+            background-size: cover;
+            color: black;
+            text-shadow: darkslategrey;
+            font: Consolas;
+        }
+        h2{
+            margin-top:20%;
+            font-size: 60px;
+            color: burlywood;
+            font:monospace;
+            text-shadow: black;
+            text-align: center;
+        }
+        div.menu{
+            font-size: 30px;
+            text-decoration: firebrick;
+            text-emphasis-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu" align='center' style="position:static">
+        <a href="{{ url_for('.hello') }}">> Login</a>
+        <a href="about:blank">> Exit</a>
+    </div>
+</body>
+</html>

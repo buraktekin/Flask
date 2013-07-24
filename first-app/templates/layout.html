@@ -1,0 +1,11 @@
+<!doctype html>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <p align="center" style="color:red">{{ message }} or <a href="{{ url_for('hello_world') }}">click here</a> to go to main page.</p>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+{% block body %}{% endblock %}
