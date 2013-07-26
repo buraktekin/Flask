@@ -1,22 +1,17 @@
 {% extends "layout.html" %}
 {% block body %}
     <title>Login</title>
-    <h4 align="center">Login Page</h4>
+    <h1 align="center">Login Page</h4>
 </head>
 <body>
     <div>
-        <form align = "center" method="POST" id="loginform" action="/login">
+        <form method="POST" id="loginform" action="/login">
             <ul>
                 <li style="list-style-type: none">Name:<input type="text" name="isim"></li><br>
-                <li style="list-style-type: none">Passw:<input type="password" name="pwd"></li><br>
+                <li style="list-style-type: none">Password:<input type="password" name="pwd"></li><br>
                 <li style="list-style-type: none"><input type="submit" name="submit" value="Submit"></li><br><br>
             </ul>
         </form>
-    </div>
-    <div>
-        {% if error %}
-            <p align="center"></p>
-        {% endif %}
     </div>
 {% endblock %}
 </body>
