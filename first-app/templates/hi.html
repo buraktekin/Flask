@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Hello from Flask</title>
+{% if name %}
+     <h1 align = "center">Hello {{ name }}!</h1>
+{% endif %}
+</head>
+<body>
+    <div class="menu">
+        <span><a href={{ url_for('dump_session') }}>Home Page</a></span>
+    </div>
+</body>
+</html>
